@@ -501,3 +501,49 @@ footer {
     }
 
 }
+
+/* MOBILE NAVBAR */
+
+.nav-menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:900px){
+
+.nav-menu{
+position:absolute;
+top:80px;
+left:-100%;
+width:100%;
+background:#0f172a;
+padding:20px 0;
+transition:0.4s;
+}
+
+.nav-menu ul{
+flex-direction:column;
+text-align:center;
+}
+
+.nav-menu ul li{
+margin:15px 0;
+}
+
+/* show menu button */
+
+.nav-menu-btn{
+display:block;
+}
+
+/* hide menu initially */
+
+.nav-menu.responsive{
+left:0;
+}
+
+}
